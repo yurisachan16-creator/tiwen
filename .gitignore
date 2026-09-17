@@ -11,3 +11,7 @@ logs/
 *.sqlite
 *.sqlite3
 *.db
+node_modules/
+coverage/
+.tiwen/
+tiwen-preview*.json

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>提问 · 本地预览</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body><main>
+<header><a class="wordmark" href="/">提问<span>TIWEN</span></a><span class="badge">M1 · 本地预览</span></header>
+<section class="intro"><p class="eyebrow">问题和回复样例</p><h1>这些问题，你想回答吗？</h1><p>选一类问题看看，也可以试试下面的回复样例。当前不会发到 X。</p></section>
+<div class="toolbar"><label>预览方式 <select id="mode"><option value="offline">离线样例 · 无需密钥</option><option value="live" disabled>真实模型 · 尚未配置</option></select></label><p id="mode-note">离线样例使用固定题目、编辑评议和示例回复，不会调用模型。</p></div>
+<div id="error" role="alert" hidden></div>
+<section class="panel"><div class="section-head"><div><p class="eyebrow">01 / QUESTIONS</p><h2>挑个问题</h2></div><button id="generate" type="button">预览选题 →</button></div>
+<div class="controls"><label>问题类型 <select id="category"><option value="everyday">日常观察</option><option value="challenge">跨领域挑战</option></select></label><label id="failure-label">样例情境 <select id="failure"><option value="normal">正常筛选</option><option value="all-rejected">全部不合格</option></select></label></div>
+<div id="question-result" aria-live="polite"><div class="empty">点击“预览选题”，查看五个候选和筛选理由。</div></div></section>
+<section class="panel"><div class="section-head"><div><p class="eyebrow">02 / CONVERSATION</p><h2>看看怎么接话</h2></div><button id="reply" type="button">预览回应 →</button></div>
+<div class="controls"><label>对话情境 <select id="scenario"></select></label></div><p id="conversation-question" class="question-small"></p><label for="message">用户说</label><textarea id="message" rows="3" readonly></textarea><p class="hint" id="message-note">离线模式展示预设对话；真实模型模式可编辑用户输入。</p><div id="reply-result" aria-live="polite"></div></section>
+<section class="panel history"><div class="section-head"><div><p class="eyebrow">03 / REVIEW</p><h2>预览记录</h2></div><button id="export" class="secondary" type="button">导出记录</button></div><p class="hint">最多保留20次预览，仅存于当前进程内存，重启即清空。导出前请检查是否含有私人输入。</p><div id="runs" class="empty">还没有预览记录。</div></section>
+<footer>提问 / 开发预览<span id="usage"></span></footer>
+</main></body></html>
