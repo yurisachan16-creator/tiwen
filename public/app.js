@@ -19,7 +19,7 @@ async function refresh() {
   if (!records.length) $('runs').textContent = '还没有预览记录。';
   for (const r of records) {
     const label = r.result.mode === 'offline' ? '离线样例' : '真实模型';
-    const text = r.kind === 'questions' ? r.result.selected?.text || '本次跳过' : r.result.text || '停止回应';
+    const text = r.kind === 'questions' ? r.result.selected?.text || '本次跳过' : r.result.text || (r.result.action === 'stop' ? '停止回应' : '本轮不回复');
     $('runs').append(el('div', `${new Date(r.createdAt).toLocaleTimeString()} · ${label} · ${text}`, 'run'));
   }
   const latest = await api('/api/config');
@@ -52,7 +52,7 @@ $('reply').addEventListener('click', () => action($('reply'), async () => {
   const input = mode === 'offline' ? { mode, scenarioId: s.id } : { mode, question: s.question, messages: [...s.messages.slice(0,-1), { role: 'user', content: $('message').value }] };
   const { result } = await api('/api/reply', input);
   const names = { ask:'追问', explain:'解释', perspective:'补充视角', end:'自然结束', boundary:'说明边界', stop:'停止回应' };
-  const card = el('div', undefined, 'reply-card'); card.append(el('span', names[result.action], 'small-tag'), el('p', result.text || '不生成或发送回复。'), el('p', result.reason, 'hint'), el('p', result.notice || '退出请求优先处理。', 'hint')); $('reply-result').replaceChildren(card);
+  const card = el('div', undefined, 'reply-card'); card.append(el('span', names[result.action], 'small-tag'), el('p', result.text || (result.action === 'stop' ? '用户已要求停止，不回复。' : '本轮无需补充，不回复；没有将用户设为退出。')), el('p', result.reason, 'hint'), el('p', result.notice || '退出请求优先处理。', 'hint')); $('reply-result').replaceChildren(card);
 }));
 $('scenario').addEventListener('change', showScenario); $('mode').addEventListener('change', setMode);
 $('export').addEventListener('click', () => { const url = URL.createObjectURL(new Blob([JSON.stringify({ notice:'本地预览记录；可能包含手动输入，请勿直接公开。', records }, null, 2)], { type:'application/json' })); const a = el('a'); a.href=url; a.download='tiwen-preview.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); });

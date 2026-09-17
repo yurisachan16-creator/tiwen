@@ -18,7 +18,7 @@
 | --- | --- |
 | `GET /api/config` | 模型是否可用、调用计数、候选目录和合成对话；不返回密钥或服务地址 |
 | `POST /api/questions` | `mode` 为 offline/live，`category` 为 everyday/challenge；返回每轮候选、逐项评议、选中或跳过及版本 |
-| `POST /api/reply` | 离线传 `scenarioId`；真实模型传 `question` 与最多10条 user/assistant 消息；返回动作、正文和理由 |
+| `POST /api/reply` | 离线传 `scenarioId`；真实模型传 `question` 与最多10条 user/assistant 消息；返回动作、正文和理由；`end` 可为空，`stop` 必须为空 |
 | `GET /api/runs` | 当前进程最多20条预览记录，重启清空 |
 
 选题可额外传入最多90条 `history` 供精确去重和模型语义评议；网页当前不维护出版历史。离线模式只能展示固定情境，不能对自由输入伪装成 AI 回应。`all-rejected` 仅为离线失败演示。
@@ -46,3 +46,5 @@
 - [Chat Completions 接口参考](https://developers.openai.com/api/reference/resources/chat)
 
 执行 `npm run check`；在 Node.js 22、24 的 CI 分别验证。网络契约用本地模拟响应测试，真实服务需显式配置后另行记录。启动页和离线交互通过实际浏览器检查后，才能标记技术预览可验收。
+
+回复提示词从合成对话中只选4例，不读取题库、校准历史或独立评测输入。修改样例需更新提示词版本；生成后的候选没有额外润色步骤，评议通过的题干直接进入选择。

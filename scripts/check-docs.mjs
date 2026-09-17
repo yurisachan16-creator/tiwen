@@ -31,3 +31,15 @@ for (const c of catalog) {
   assert.ok(c.history.length>0,c.id+' missing earlier draft');
   for(const h of c.history) for(const key of ['revision','text','focus','decision','reason','reviewStatus']) assert.ok(typeof h[key]==='string'&&h[key].trim(),c.id+' history '+key);
 }
+
+const {PROMPT_VERSION,REPLY_EXAMPLE_IDS,replyExamples}=await import('../src/prompts.mjs');
+const voice=await readFile(new URL('docs/VOICE.md',root),'utf8');
+assert.ok(voice.includes('`'+PROMPT_VERSION+'`'),'VOICE prompt version drift');
+assert.equal(new Set(REPLY_EXAMPLE_IDS).size,4);
+assert.equal(replyExamples.length,4);
+for(const e of replyExamples) {
+  const source=scenarios.find(s=>s.id===e.id);
+  assert.ok(source,'missing example source');
+  assert.deepEqual(e.response,source.expected,'runtime example drift');
+  assert.equal(source.reviewStatus,'editorial-draft');
+}

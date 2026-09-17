@@ -72,7 +72,8 @@ export function shouldStop(text) {
 }
 
 export function validateReply(value) {
-  if (!value || !actions.includes(value.action) || typeof value.text !== 'string' || value.text.length > 500 || typeof value.reason !== 'string' || !value.reason.trim() || value.reason.length > 1000 || (value.action === 'stop' && value.text !== '') || (value.action !== 'stop' && !value.text.trim())) throw new Error('回复动作或内容不合格。');
+  if (!value || !actions.includes(value.action) || typeof value.text !== 'string' || value.text.length > 500 || typeof value.reason !== 'string' || !value.reason.trim() || value.reason.length > 1000 || (value.action === 'stop' && value.text !== '') || (!['stop','end'].includes(value.action) && !value.text.trim())) throw new Error('回复动作或内容不合格。');
+  if (value.action === 'end' && value.text !== '' && !value.text.trim()) throw new Error('结束正文应为空或包含实际内容。');
   return { action: value.action, text: value.text, reason: value.reason };
 }
 

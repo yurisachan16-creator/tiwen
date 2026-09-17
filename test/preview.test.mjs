@@ -170,3 +170,31 @@ test('question rounds reserve generation and review capacity before spending', a
     assert.equal(fetches,limit-1); assert.equal(p.snapshot().calls,limit-1);
   }
 });
+test('live reply request includes only selected current examples', async () => {
+  const {replying,replyExamples,REPLY_EXAMPLE_IDS}=await import('../src/prompts.mjs');
+  assert.deepEqual(replyExamples.map(s=>s.id),['brief','concept','complete','stop']);
+  let calls=0;
+  const input={mode:'live',question:'社区共享冰箱该怎么标注日期？',messages:[{role:'user',content:'有人看不清小字。'}]};
+  const provider={complete:async(system,data)=>{
+    calls++; assert.equal(system,replying); assert.match(system,/两家店即使都报90%/);
+    assert.ok(!system.includes('你已经把样本')); assert.ok(!system.includes('09a445e'));
+    for(const s of scenarios.filter(s=>!REPLY_EXAMPLE_IDS.includes(s.id))) assert.ok(!system.includes(s.messages.at(-1).content));
+    assert.deepEqual(data,{question:input.question,messages:input.messages});
+    return {action:'ask',text:'除了放大字，你觉得日期还可以怎么标？',reason:'沿着可读性继续讨论。'};
+  },snapshot:()=>({calls,limit:10})};
+  assert.equal((await previewReply(input,provider)).action,'ask'); assert.equal(calls,1);
+});
+test('empty end means this turn is finished, not an opt-out', async () => {
+  const {validateReply}=await import('../src/engine.mjs');
+  assert.equal(validateReply({action:'end',text:'',reason:'无需补充'}).text,'');
+  for(const action of ['ask','explain','perspective','boundary']) assert.throws(()=>validateReply({action,text:'',reason:'无内容'}));
+  assert.throws(()=>validateReply({action:'stop',text:'再见',reason:'退出'}));
+  assert.throws(()=>validateReply({action:'end',text:'   ',reason:'空白不算回复'}));
+  let calls=0;
+  const provider={complete:async()=>({action:++calls===1?'end':'explain',text:calls===1?'':'还可以接着讨论。',reason:'按当前对话处理'}),snapshot:()=>({calls})};
+  const question='图书馆怎样提醒读者归还书？';
+  const first=await previewReply({mode:'live',question,messages:[{role:'user',content:'知道了，谢谢。'}]},provider);
+  assert.equal(first.action,'end');assert.equal(first.text,'');
+  const next=await previewReply({mode:'live',question,messages:[{role:'user',content:'知道了，谢谢。'},{role:'user',content:'还有个新问题，提醒要写什么？'}]},provider);
+  assert.equal(next.action,'explain');assert.equal(calls,2);
+});
