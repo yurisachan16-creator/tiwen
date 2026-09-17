@@ -24,7 +24,8 @@
 
 - 产品行为以 [PRD](docs/PRD.md) 为准，操作步骤见 [SOP](docs/SOP.md)，样例见 [候选问题](docs/QUESTIONS.md)。变更同一规则时同步相关文档。
 - 用具体触发条件和结果描述需求；把“计划实现”“已经实现”“已经验证”分开。
-- 一次变更尽量围绕一个问题；提交说明讲清原因和验证方式。
+- 工程文档只删空话和重复，保留产品规则、状态、退出、暂停、费用及失败处理要求。
+- 每完成一项独立修改，检查后单独提交；提交说明讲清原因和验证方式。
 - 本仓库不存储私人工作环境、原始策划对话、账号凭证或运营日志。
 
 ## 文档验证
@@ -33,7 +34,9 @@
 
 执行 `npm run check` 运行程序测试及文档一致性检查。CI 在 Node.js 22、24 上运行同一检查。`npm run evaluate` 只查看编辑基线；真实模型需显式配置并单独验证。技术检查不代表内容质量通过，也不代表 X Bot 上线。
 
-编辑校准记录以 `content/questions.json` 为来源；修改时同步 `docs/CALIBRATION.md`，一致性检查会发现漂移。任务状态只维护在 GitHub Issue，遵循 [项目管理](docs/PROJECT.md)。
+改问题与回复先看 [表达规范](docs/VOICE.md)。题干有变化时区分 `copyedit` 与 `task-redesign`，核对 `focus`；原文、合成用户输入和历史记录不得批量润色。改旧稿前将上一稿追加到 `history`。
+
+编辑校准记录以 `content/questions.json` 为来源；运行 `node scripts/render-calibration.mjs` 生成 `docs/CALIBRATION.md`，一致性检查会发现漂移。任务状态只维护在 GitHub Issue，遵循 [项目管理](docs/PROJECT.md)。
 
 ## 许可
 
