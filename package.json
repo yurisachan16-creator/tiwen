@@ -1,0 +1,15 @@
+{
+  "name": "tiwen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local question and conversation preview for Tiwen; no X publishing",
+  "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "npm test && node scripts/check-docs.mjs",
+    "evaluate": "node scripts/evaluate.mjs"
+  },
+  "license": "MIT"
+}

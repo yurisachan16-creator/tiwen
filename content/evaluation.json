@@ -1,0 +1,89 @@
+[
+  {
+    "id": "binary",
+    "text": "效率和公平哪个更重要？为什么？",
+    "expected": "reject",
+    "dimension": "open",
+    "reason": "缺乏具体情境，把复杂取舍压成抽象二选一。"
+  },
+  {
+    "id": "loaded",
+    "text": "为什么现代人越来越没有耐心？",
+    "expected": "reject",
+    "dimension": "grounded",
+    "reason": "把未经核实的趋势当成事实前提。"
+  },
+  {
+    "id": "slogan",
+    "text": "人生的意义是什么？",
+    "expected": "reject",
+    "dimension": "accessible",
+    "reason": "对于本产品的短时练习过宽，没有具体进入点；不表示该哲学问题没有价值。"
+  },
+  {
+    "id": "private-disclosure",
+    "text": "说出你最痛苦的秘密，它如何塑造你？",
+    "expected": "reject",
+    "dimension": "grounded",
+    "reason": "把公开敏感经历作为参与条件。"
+  },
+  {
+    "id": "knowledge",
+    "text": "不查资料，写出潮汐的完整物理公式。",
+    "expected": "reject",
+    "dimension": "accessible",
+    "reason": "专业背景门槛高，主要考记忆而非开放探索。"
+  },
+  {
+    "id": "yes-man",
+    "text": "相关不等于因果，你同意吧？",
+    "expected": "reject",
+    "dimension": "thoughtful",
+    "reason": "邀请附和一句口号，没有真正可探索的任务。"
+  },
+  {
+    "id": "overloaded",
+    "text": "观察一家餐厅，分析客群，计算成本，设计问卷，再制定三个月改造方案。",
+    "expected": "reject",
+    "dimension": "clear",
+    "reason": "一次堆叠多个任务，超出短时参与范围。"
+  },
+  {
+    "id": "map",
+    "text": "一张地图把距离画得不准确，却仍然很好用。它可能保留了哪些信息？",
+    "expected": "accept",
+    "dimension": "all",
+    "reason": "具体的用途张力，允许不同地图和多条解释路径。"
+  },
+  {
+    "id": "sample",
+    "text": "两家店都说顾客满意度是90%。在比较之前，你最想知道这个数字是怎样得到的？",
+    "expected": "accept",
+    "dimension": "all",
+    "reason": "明确情境，引向测量方法而非预设结论。"
+  },
+  {
+    "id": "shared-tools",
+    "text": "假设一个共享工具箱总有工具迟迟没被归还。你会先去了解什么？",
+    "expected": "accept",
+    "dimension": "all",
+    "reason": "没有把未归还预先归因为恶意，允许不同解释。"
+  },
+  {
+    "id": "boundary",
+    "text": "你愿意分享一个改变想法的时刻吗？",
+    "expected": "discuss",
+    "dimension": "accessible",
+    "reason": "不一定坏，但个人回忆门槛、二元入口和隐私舒适度需要真实编辑反馈，不能硬编码唯一裁决。"
+  },
+  {
+    "id": "semantic-duplicate",
+    "text": "一幅地图的比例并不精确，人们却觉得实用，它留下了什么？",
+    "history": [
+      "一张地图把距离画得不准确，却仍然很好用。它可能保留了哪些信息？"
+    ],
+    "expected": "reject",
+    "dimension": "novel",
+    "reason": "文字不同，但与历史题目的情境和思考任务一致。"
+  }
+]
