@@ -8,62 +8,140 @@
     "decision": "keep",
     "reason": "以公共空间的具体细节进入，允许多种观察，不要求个人隐私。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "找一处你经常经过的公共空间：哪一个不起眼的细节，改变了人们走路或停留的方式？",
+        "focus": "从细节观察行为",
+        "decision": "keep",
+        "reason": "以公共空间的具体细节进入，允许多种观察，不要求个人隐私。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "从细节观察行为",
+    "editKind": "none",
+    "editNote": "题干未改动。"
   },
   {
     "id": "A02",
     "category": "everyday",
     "original": "选一件你经常使用、却总要迁就它的东西。你会改哪里？谁使用时可能反而不方便？",
     "text": "有没有一件东西，你已经熟练掌握了它“不好用”的那一部分？它让你学会了什么奇怪的小动作？",
-    "focus": "设计与影响",
+    "focus": "观察使用习惯与迁就动作",
     "decision": "rewrite",
     "reason": "原题连续要求改造与影响评估，收成一个有趣的使用摩擦。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "有没有一件东西，你已经熟练掌握了它“不好用”的那一部分？它让你学会了什么奇怪的小动作？",
+        "focus": "设计与影响",
+        "decision": "rewrite",
+        "reason": "原题连续要求改造与影响评估，收成一个有趣的使用摩擦。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "设计与影响",
+    "editKind": "task-redesign",
+    "editNote": "从改造物品并分析受影响的人，改为观察使用者为迁就物品学会的动作。"
   },
   {
     "id": "A03",
     "category": "everyday",
     "original": "回想一件让你意外的小事。除了最先想到的原因，还有什么能解释它？哪条线索能帮你分辨？",
     "text": "找一件乍看很容易误会的小事。换上哪个细节，整个解释就变了？",
-    "focus": "替代解释与证据",
+    "focus": "细节变化与解释更新",
     "decision": "rewrite",
     "reason": "从笼统回忆练习改成可任选的误解，减少考试口吻。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "找一件乍看很容易误会的小事。换上哪个细节，整个解释就变了？",
+        "focus": "替代解释与证据",
+        "decision": "rewrite",
+        "reason": "从笼统回忆练习改成可任选的误解，减少考试口吻。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "替代解释与证据",
+    "editKind": "task-redesign",
+    "editNote": "从提出替代解释并寻找区分证据，改为观察更换细节怎样改变解释。"
   },
   {
     "id": "A04",
     "category": "everyday",
     "original": "看看附近的一块指示牌。一个第一次来这里的人，可能会怎样理解它？",
     "text": "一扇写着“推”、却总让人想拉的门，可能是哪里在误导人？",
-    "focus": "换位与信息设计",
+    "focus": "发现信息设计中的使用摩擦",
     "decision": "rewrite",
     "reason": "给出更可见的矛盾，不先要求换位分析。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "一扇写着“推”、却总让人想拉的门，可能是哪里在误导人？",
+        "focus": "换位与信息设计",
+        "decision": "rewrite",
+        "reason": "给出更可见的矛盾，不先要求换位分析。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "换位与信息设计",
+    "editKind": "task-redesign",
+    "editNote": "从理解陌生人如何阅读指示牌，改为寻找门的设计为何引起误操作。"
   },
   {
     "id": "A05",
     "category": "everyday",
     "original": "找一个你熟悉的排队场景。除了队伍长短，还有什么能帮助你判断要等多久？",
     "text": "两条一样长的队伍，为什么可能让人感觉等了完全不同的时间？",
-    "focus": "多变量观察",
+    "focus": "等待感受与影响因素",
     "decision": "rewrite",
     "reason": "让问题从现实差异起步，减少列变量的作业感。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "两条一样长的队伍，为什么可能让人感觉等了完全不同的时间？",
+        "focus": "多变量观察",
+        "decision": "rewrite",
+        "reason": "让问题从现实差异起步，减少列变量的作业感。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "多变量观察",
+    "editKind": "task-redesign",
+    "editNote": "从估计实际等候时间，改为解释等待感受的差异。"
   },
   {
     "id": "A06",
     "category": "everyday",
     "original": "选一个你最近觉得顺手的工具。它替你省掉了哪一步？那一步原来有什么作用？",
     "text": "哪一种“自动完成”的功能，让你偶尔反而想自己动手？那个时刻有什么特别？",
-    "focus": "理解流程变化",
+    "focus": "自动化与参与体验",
     "decision": "rewrite",
     "reason": "保留工具背后的步骤，但不预设被省略步骤一定值得保留。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "哪一种“自动完成”的功能，让你偶尔反而想自己动手？那个时刻有什么特别？",
+        "focus": "理解流程变化",
+        "decision": "rewrite",
+        "reason": "保留工具背后的步骤，但不预设被省略步骤一定值得保留。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "理解流程变化",
+    "editKind": "task-redesign",
+    "editNote": "从分析工具省略的步骤，改为描述希望亲自操作的情境。"
   },
   {
     "id": "A07",
@@ -74,18 +152,44 @@
     "decision": "drop",
     "reason": "原题需要先找到一张有用清单，再做排序；情境不足且与多道设计约束题重复。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "找一张你觉得有用的清单。假如只能留下三项，你会用什么标准选择？",
+        "focus": "约束下排序",
+        "decision": "drop",
+        "reason": "原题需要先找到一张有用清单，再做排序；情境不足且与多道设计约束题重复。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "约束下排序",
+    "editKind": "none",
+    "editNote": "题干未改动。"
   },
   {
     "id": "A08",
     "category": "everyday",
     "original": "找一个你习惯说的词，比如“方便”或“划算”。什么例子能说明它对不同人意味着不同东西？",
     "text": "同一件东西，有人说“很方便”，另一个人却完全不同意。他们各自可能省掉了什么、又多做了什么？",
-    "focus": "概念与语境",
+    "focus": "便利的不同含义",
     "decision": "rewrite",
     "reason": "把抽象词义分析收敛为一个普通词的具体冲突。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "同一件东西，有人说“很方便”，另一个人却完全不同意。他们各自可能省掉了什么、又多做了什么？",
+        "focus": "概念与语境",
+        "decision": "rewrite",
+        "reason": "把抽象词义分析收敛为一个普通词的具体冲突。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "概念与语境",
+    "editKind": "task-redesign",
+    "editNote": "把自选词及其含义收窄为便利与操作负担的比较。"
   },
   {
     "id": "A09",
@@ -96,40 +200,92 @@
     "decision": "keep",
     "reason": "普通包装人人可观察，功能探索没有指定结论。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "观察一件普通物品的包装。除了装住物品，它还在帮助人做什么？",
+        "focus": "发现隐含功能",
+        "decision": "keep",
+        "reason": "普通包装人人可观察，功能探索没有指定结论。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "发现隐含功能",
+    "editKind": "none",
+    "editNote": "题干未改动。"
   },
   {
     "id": "A10",
     "category": "everyday",
     "original": "想一段容易被误解的日常说明。只改一句话，你会怎样让第一次看到的人更容易行动？",
     "text": "有没有一句说明，每个字你都认识，却还是不知道下一步怎么做？它缺的可能是什么？",
-    "focus": "清晰表达",
+    "focus": "发现说明缺失的信息",
     "decision": "rewrite",
     "reason": "给出具体的阅读错位，避免泛泛要求写说明。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "有没有一句说明，每个字你都认识，却还是不知道下一步怎么做？它缺的可能是什么？",
+        "focus": "清晰表达",
+        "decision": "rewrite",
+        "reason": "给出具体的阅读错位，避免泛泛要求写说明。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "清晰表达",
+    "editKind": "task-redesign",
+    "editNote": "从限定只改一句说明，改为发现说明中缺失的信息。"
   },
   {
     "id": "A11",
     "category": "everyday",
     "original": "选一个你熟悉的工作流程。假如其中一步暂时不能做，哪些步骤仍然可以继续？",
     "text": "日常生活里，有哪个很小的步骤一旦做不了，后面一串事情就都停住了？",
-    "focus": "依赖关系",
+    "focus": "识别流程中的阻塞点",
     "decision": "rewrite",
     "reason": "工作流程门槛较高，转成日常动作中的依赖。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "日常生活里，有哪个很小的步骤一旦做不了，后面一串事情就都停住了？",
+        "focus": "依赖关系",
+        "decision": "rewrite",
+        "reason": "工作流程门槛较高，转成日常动作中的依赖。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "依赖关系",
+    "editKind": "task-redesign",
+    "editNote": "从找出受阻后仍可继续的步骤，改为寻找会阻断后续流程的步骤。"
   },
   {
     "id": "A12",
     "category": "everyday",
     "original": "找一个你见过的“默认选项”。如果它换了，人们的行为可能怎样变化？",
     "text": "某个按钮如果从“需要自己勾选”变成“默认勾上”，你猜哪种行为会悄悄变多？",
-    "focus": "默认与行为",
+    "focus": "默认设置与行为预测",
     "decision": "rewrite",
     "reason": "减少抽象默认选项术语，允许从任意应用举例。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "某个按钮如果从“需要自己勾选”变成“默认勾上”，你猜哪种行为会悄悄变多？",
+        "focus": "默认与行为",
+        "decision": "rewrite",
+        "reason": "减少抽象默认选项术语，允许从任意应用举例。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "默认与行为",
+    "editKind": "task-redesign",
+    "editNote": "把任意默认选项变化收窄为默认勾选后的行为预测。"
   },
   {
     "id": "A13",
@@ -140,18 +296,44 @@
     "decision": "drop",
     "reason": "依赖回忆个人判断转变，与其他解释更新题重合；先不放入首批预览池。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "回想一个你改变了理解的时刻。哪个具体细节，让原来的解释不再够用了？也可以举公开事件的例子。",
+        "focus": "更新理解",
+        "decision": "drop",
+        "reason": "依赖回忆个人判断转变，与其他解释更新题重合；先不放入首批预览池。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "更新理解",
+    "editKind": "none",
+    "editNote": "题干未改动。"
   },
   {
     "id": "A14",
     "category": "everyday",
     "original": "选一件看起来“很费时间”的小事。怎样观察，才能知道时间究竟花在了哪里？",
-    "text": "一件只需要做五分钟的事，为什么有时能占据我们一整天？",
+    "text": "选一件经常觉得费时间的小事。你会怎样弄清时间花在了哪一步？",
     "focus": "拆解与测量",
     "decision": "rewrite",
-    "reason": "原题像流程优化任务，改为人能立即辨认的时间体验。",
+    "reason": "保留拆解与测量的任务；撤回把它改成时间感受讨论的上一稿。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "一件只需要做五分钟的事，为什么有时能占据我们一整天？",
+        "focus": "拆解与测量",
+        "decision": "rewrite",
+        "reason": "原题像流程优化任务，改为人能立即辨认的时间体验。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "拆解与测量",
+    "editKind": "copyedit",
+    "editNote": "保留原题前提、约束和思考动作，只调整措辞或补足假设标记。"
   },
   {
     "id": "A15",
@@ -162,40 +344,92 @@
     "decision": "keep",
     "reason": "自发小规则是可见对象，能讨论用途和例外。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "找一个人们自发形成的小规则，比如留座或借东西。它解决了什么问题，又在哪种情况下容易失灵？",
+        "focus": "规则与边界",
+        "decision": "keep",
+        "reason": "自发小规则是可见对象，能讨论用途和例外。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "规则与边界",
+    "editKind": "none",
+    "editNote": "题干未改动。"
   },
   {
     "id": "B01",
     "category": "challenge",
     "original": "一座公园只能做一项改造：你会先观察什么，再决定把钱花在哪里？",
     "text": "假设你想知道一座公园该怎么改，你会去哪里找到那些平时没来的人？",
-    "focus": "需求与取样",
+    "focus": "发现未被观察到的使用者",
     "decision": "rewrite",
     "reason": "预算配置任务偏工作坊，收敛成谁没有被观察到。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设你想知道一座公园该怎么改，你会去哪里找到那些平时没来的人？",
+        "focus": "需求与取样",
+        "decision": "rewrite",
+        "reason": "预算配置任务偏工作坊，收敛成谁没有被观察到。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "需求与取样",
+    "editKind": "task-redesign",
+    "editNote": "去掉只能改造一项的约束，改为寻找平时未到访的使用者。"
   },
   {
     "id": "B02",
     "category": "challenge",
     "original": "一家书店把书按“读完后的感受”分类。你会怎样让第一次来的读者找到想读的书？",
     "text": "如果书店按“读完后的感受”排书，你会给哪一类书起一个什么名字？",
-    "focus": "分类与检索",
+    "focus": "分类命名",
     "decision": "rewrite",
     "reason": "把设计任务改成试分类的邀请，不需要完整方案。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "如果书店按“读完后的感受”排书，你会给哪一类书起一个什么名字？",
+        "focus": "分类与检索",
+        "decision": "rewrite",
+        "reason": "把设计任务改成试分类的邀请，不需要完整方案。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "分类与检索",
+    "editKind": "task-redesign",
+    "editNote": "从帮助读者检索的设计任务，改为给感受类别命名。"
   },
   {
     "id": "B03",
     "category": "challenge",
     "original": "假设同一杯水，有人觉得温、有人觉得凉。你会怎样设计一个小实验，区分可能的原因？",
     "text": "假设同一杯水，两个人一个说温、一个说凉。你会先问他们什么？",
-    "focus": "实验设计",
+    "focus": "通过提问寻找感受差异的原因",
     "decision": "rewrite",
     "reason": "原题要求设计实验较像作业，先打开解释空间。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设同一杯水，两个人一个说温、一个说凉。你会先问他们什么？",
+        "focus": "实验设计",
+        "decision": "rewrite",
+        "reason": "原题要求设计实验较像作业，先打开解释空间。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "实验设计",
+    "editKind": "task-redesign",
+    "editNote": "从实验设计改为提问寻因；新题不能继续按实验设计评议。"
   },
   {
     "id": "B04",
@@ -206,29 +440,68 @@
     "decision": "keep",
     "reason": "数字具体，追问测量来源有清晰入口。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设两家店都说顾客满意度是 90%。在比较之前，你最想知道这个数字是怎样得到的？",
+        "focus": "测量与样本",
+        "decision": "keep",
+        "reason": "数字具体，追问测量来源有清晰入口。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "测量与样本",
+    "editKind": "copyedit",
+    "editNote": "保留原题前提、约束和思考动作，只调整措辞或补足假设标记。"
   },
   {
     "id": "B05",
     "category": "challenge",
     "original": "一款学习工具让完成练习的人数增加了。还需要观察什么，才能判断大家是否学会了？",
     "text": "假设一个学习应用的用户每天都在打卡，你还想看到什么，才会觉得这些时间花得值得？",
-    "focus": "指标与目标",
+    "focus": "指标与时间价值",
     "decision": "rewrite",
     "reason": "原题教学考核语气较强，保留指标与体验的落差。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设一个学习应用的用户每天都在打卡，你还想看到什么，才会觉得这些时间花得值得？",
+        "focus": "指标与目标",
+        "decision": "rewrite",
+        "reason": "原题教学考核语气较强，保留指标与体验的落差。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "指标与目标",
+    "editKind": "task-redesign",
+    "editNote": "从判断是否学会，改为判断打卡花费的时间是否值得。"
   },
   {
     "id": "B06",
     "category": "challenge",
     "original": "假设城市停电一小时。你会根据什么，判断哪些看似互不相关的服务会一起受影响？",
     "text": "假设一座城市停电一小时，哪件平时看起来“不需要电”的事，也可能跟着做不了？",
-    "focus": "系统依赖",
+    "focus": "发现隐含的系统依赖",
     "decision": "rewrite",
     "reason": "庞大停电系统任务收敛成容易漏掉的影响。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设一座城市停电一小时，哪件平时看起来“不需要电”的事，也可能跟着做不了？",
+        "focus": "系统依赖",
+        "decision": "rewrite",
+        "reason": "庞大停电系统任务收敛成容易漏掉的影响。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "系统依赖",
+    "editKind": "task-redesign",
+    "editNote": "从寻找服务共同受影响的判断依据，改为发现一个隐含用电依赖。"
   },
   {
     "id": "B07",
@@ -239,29 +512,68 @@
     "decision": "drop",
     "reason": "自行车原理说明容易变成知识正确性测验，非首批开放探索重点。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "给第一次见到自行车的人写一句说明，帮助他理解它怎样保持前进。你会从哪个现象开始讲？",
+        "focus": "建立解释",
+        "decision": "drop",
+        "reason": "自行车原理说明容易变成知识正确性测验，非首批开放探索重点。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "建立解释",
+    "editKind": "none",
+    "editNote": "题干未改动。"
   },
   {
     "id": "B08",
     "category": "challenge",
     "original": "假设一项比赛允许参赛者自己选评分标准。你会怎样设计规则，让不同作品仍能被有意义地比较？",
     "text": "如果一场比赛由参赛者自己提出评分标准，你猜他们会带来哪些原本不算“优秀”的作品？",
-    "focus": "公平与评价",
+    "focus": "评价标准对作品的影响",
     "decision": "rewrite",
     "reason": "评分规则设计负担较大，先探索标准带来的变化。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "如果一场比赛由参赛者自己提出评分标准，你猜他们会带来哪些原本不算“优秀”的作品？",
+        "focus": "公平与评价",
+        "decision": "rewrite",
+        "reason": "评分规则设计负担较大，先探索标准带来的变化。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "公平与评价",
+    "editKind": "task-redesign",
+    "editNote": "从设计可比较的评分规则，改为预测评分标准带来的作品变化。"
   },
   {
     "id": "B09",
     "category": "challenge",
     "original": "一座博物馆要介绍一个已经消失的职业，只能展出三件物品。你会怎样选择，才能让人理解它的日常？",
     "text": "假设博物馆要让后人理解今天的一种普通职业，你会替它留下哪一件不起眼的物品？",
-    "focus": "信息选择与叙事",
+    "focus": "用物件呈现职业日常",
     "decision": "rewrite",
     "reason": "限定三件物品增加完成负担；一个物件也可展开。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设博物馆要让后人理解今天的一种普通职业，你会替它留下哪一件不起眼的物品？",
+        "focus": "信息选择与叙事",
+        "decision": "rewrite",
+        "reason": "限定三件物品增加完成负担；一个物件也可展开。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "信息选择与叙事",
+    "editKind": "task-redesign",
+    "editNote": "从为消失职业挑选三件展品，改为给今天的职业挑选一件物品。"
   },
   {
     "id": "B10",
@@ -272,29 +584,68 @@
     "decision": "keep",
     "reason": "不准确却有用构成具体张力，可从多种地图进入。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设一张地图把距离画得不准确，却仍然很好用。它可能保留了哪些信息？",
+        "focus": "抽象与用途",
+        "decision": "keep",
+        "reason": "不准确却有用构成具体张力，可从多种地图进入。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "抽象与用途",
+    "editKind": "copyedit",
+    "editNote": "保留原题前提、约束和思考动作，只调整措辞或补足假设标记。"
   },
   {
     "id": "B11",
     "category": "challenge",
     "original": "假设推荐系统总能找到你喜欢的内容。你会怎样设计一个小功能，让你也有机会遇见尚不知道自己会喜欢的东西？",
     "text": "假设推荐系统已经很懂你的喜好，你下一次意外喜欢上的东西，可能从哪里冒出来？",
-    "focus": "探索与设计",
+    "focus": "发现新喜好的途径",
     "decision": "rewrite",
     "reason": "原题要求设计功能，改为探索偶遇来源。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "思考任务已改变，需按当前 focus 重新评议；不得沿用原题的通过结论。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设推荐系统已经很懂你的喜好，你下一次意外喜欢上的东西，可能从哪里冒出来？",
+        "focus": "探索与设计",
+        "decision": "rewrite",
+        "reason": "原题要求设计功能，改为探索偶遇来源。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "探索与设计",
+    "editKind": "task-redesign",
+    "editNote": "从设计推荐功能，改为探索新喜好可能出现的来源。"
   },
   {
     "id": "B12",
     "category": "challenge",
     "original": "一个小岛想统计鸟的数量，却只能每天观察十分钟。你会怎样安排观察，让估计更可信？",
-    "text": "假设你在同一个小岛的不同地方数鸟，可能会画出怎样不同的“鸟类地图”？",
+    "text": "假设要估计一个小岛上有多少鸟，每天只能观察十分钟。你会怎样安排观察，让估计更可信？",
     "focus": "取样与不确定性",
     "decision": "rewrite",
-    "reason": "统计任务偏考试，改问观察地点选择造成的盲点。",
+    "reason": "保留每天十分钟的限制和提高数量估计可信度的任务；撤回鸟类分布图的上一稿。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设你在同一个小岛的不同地方数鸟，可能会画出怎样不同的“鸟类地图”？",
+        "focus": "取样与不确定性",
+        "decision": "rewrite",
+        "reason": "统计任务偏考试，改问观察地点选择造成的盲点。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "取样与不确定性",
+    "editKind": "copyedit",
+    "editNote": "保留原题前提、约束和思考动作，只调整措辞或补足假设标记。"
   },
   {
     "id": "B13",
@@ -305,7 +656,20 @@
     "decision": "keep",
     "reason": "行为原因未被预先归为恶意，允许多种解释和干预。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设一个共享工具箱总有工具迟迟没被归还。怎样先了解原因，再决定是否增加惩罚？",
+        "focus": "行为解释与干预",
+        "decision": "keep",
+        "reason": "行为原因未被预先归为恶意，允许多种解释和干预。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "行为解释与干预",
+    "editKind": "copyedit",
+    "editNote": "保留原题前提、约束和思考动作，只调整措辞或补足假设标记。"
   },
   {
     "id": "B14",
@@ -316,7 +680,20 @@
     "decision": "keep",
     "reason": "类比及其失效边界清楚，容许不同的解释路径。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设你要向没见过海的人解释“潮汐”。你会选什么熟悉的事物作比喻？这个比喻会在哪一点失效？",
+        "focus": "类比与边界",
+        "decision": "keep",
+        "reason": "类比及其失效边界清楚，容许不同的解释路径。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "类比与边界",
+    "editKind": "none",
+    "editNote": "题干未改动。"
   },
   {
     "id": "B15",
@@ -327,6 +704,19 @@
     "decision": "keep",
     "reason": "假设限定明确，鼓励在下结论前寻找其他解释。",
     "reviewStatus": "editorial-draft",
-    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。"
+    "limitation": "需要维护者盲评确认吸引力；形式开放不代表用户愿意回答。",
+    "history": [
+      {
+        "revision": "09a445e",
+        "text": "假设一家餐厅减少了菜单选项，点餐速度变快了。除了选择变少，还有哪些变化可能解释这个结果？",
+        "focus": "因果与混杂",
+        "decision": "keep",
+        "reason": "假设限定明确，鼓励在下结论前寻找其他解释。",
+        "reviewStatus": "editorial-draft"
+      }
+    ],
+    "originalFocus": "因果与混杂",
+    "editKind": "copyedit",
+    "editNote": "保留原题前提、约束和思考动作，只调整措辞或补足假设标记。"
   }
 ]
