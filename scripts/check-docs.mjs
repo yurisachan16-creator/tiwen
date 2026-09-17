@@ -2,6 +2,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import assert from 'node:assert/strict';
 import { catalog, scenarios, qualityCases } from '../src/engine.mjs';
+import { renderCalibration } from './render-calibration.mjs';
 const root=new URL('../',import.meta.url);
 async function walk(url) { const out=[]; for(const d of await readdir(url,{withFileTypes:true})) { if(['.git','node_modules'].includes(d.name)) continue; const p=new URL(d.name+(d.isDirectory()?'/':''),url); if(d.isDirectory()) out.push(...await walk(p)); else if(d.name.endsWith('.md')) out.push(p); } return out; }
 for(const file of await walk(root)) {
@@ -20,3 +21,13 @@ console.log('PASS: Markdown relative links; 30 original IDs; 15+15 categories; c
 
 const html=await readFile(new URL('public/index.html',root),'utf8');
 for (const [closing] of html.matchAll(/<\/[^>]*>/g)) assert.match(closing,/^<\/[A-Za-z][\w:-]*\s*>$/,'HTML closing tags must not contain attributes');
+
+assert.equal(calibration,renderCalibration(catalog),'Regenerate docs/CALIBRATION.md from JSON');
+for (const c of catalog) {
+  assert.ok(['none','copyedit','task-redesign'].includes(c.editKind),c.id+' edit kind');
+  for (const key of ['originalFocus','focus','editNote']) assert.ok(typeof c[key]==='string'&&c[key].trim(),c.id+' '+key);
+  assert.equal(c.reviewStatus,'editorial-draft',c.id+' needs editorial review');
+  if(c.editKind==='none') assert.equal(c.text,c.original,c.id+' changed text cannot be none');
+  assert.ok(c.history.length>0,c.id+' missing earlier draft');
+  for(const h of c.history) for(const key of ['revision','text','focus','decision','reason','reviewStatus']) assert.ok(typeof h[key]==='string'&&h[key].trim(),c.id+' history '+key);
+}
