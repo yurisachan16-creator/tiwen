@@ -43,3 +43,21 @@ for(const e of replyExamples) {
   assert.deepEqual(e.response,source.expected,'runtime example drift');
   assert.equal(source.reviewStatus,'editorial-draft');
 }
+
+const holdout=JSON.parse(await readFile(new URL('content/holdout.json',root),'utf8'));
+assert.equal(holdout.promptVersion,PROMPT_VERSION);
+assert.equal(holdout.status,'unrun-editorial-draft');
+assert.equal(holdout.questions.length,10);assert.equal(holdout.dialogues.length,5);
+const all=[...catalog,...scenarios,...qualityCases,...holdout.questions,...holdout.dialogues];
+assert.equal(new Set(all.map(c=>c.id)).size,all.length,'duplicate content ID');
+const {replying}=await import('../src/prompts.mjs');
+for(const c of holdout.questions) {
+  assert.ok(['accept','reject','discuss'].includes(c.expected));
+  assert.ok(!replying.includes(c.text),'holdout question in runtime prompt');
+  assert.ok(!qualityCases.some(q=>q.text===c.text),'development input in holdout');
+}
+for(const d of holdout.dialogues) {
+  assert.ok(d.expectedActions.length>0&&d.expectedActions.every(a=>['explain','perspective','ask','end','boundary','stop'].includes(a)));
+  assert.ok(!replying.includes(d.question),'holdout dialogue in runtime prompt');
+  assert.ok(!scenarios.some(s=>s.question===d.question),'development dialogue in holdout');
+}

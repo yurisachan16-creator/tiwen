@@ -1,0 +1,24 @@
+{
+  "status": "unrun-editorial-draft",
+  "promptVersion": "m1-2026-09-17.2",
+  "notice": "新增独立验收输入，不进入运行时提示词。尚未调用模型或完成维护者盲评；如用这些结果调整提示词，须更换保留集。",
+  "questions": [
+    {"id":"holdout-q01","category":"everyday","text":"同一段楼梯，上楼和下楼时，你会注意哪些不同的细节？","expected":"accept","reason":"对象具体，可从视线、动作和环境等角度观察，不要求个人隐私。"},
+    {"id":"holdout-q02","category":"everyday","text":"真正负责的人从不迟到。你准备怎样改掉迟到的坏习惯？","expected":"reject","reason":"预设用户迟到并把行为直接等同于道德品质。"},
+    {"id":"holdout-q03","category":"everyday","text":"看到一份特别整齐的笔记，你还想知道什么，才能判断它有没有帮人理解内容？","expected":"accept","reason":"区分外观与用途，允许不同检验方式。"},
+    {"id":"holdout-q04","category":"everyday","text":"工作和生活，你到底选哪个？","expected":"reject","reason":"缺少情境和具体取舍，压成虚假二选一。"},
+    {"id":"holdout-q05","category":"everyday","text":"说出你最不敢让家人知道的秘密，它怎样改变了你？","expected":"reject","reason":"把披露私人秘密设为参与条件。"},
+    {"id":"holdout-q06","category":"challenge","text":"假设快递柜不显示取件码，你会怎样让收件人找到自己的格子，同时不误开别人的？","expected":"accept","reason":"具体限制下的信息设计，允许多种方案。"},
+    {"id":"holdout-q07","category":"challenge","text":"所有吃早餐的人都更专注，所以学校应该怎样强制学生吃早餐？","expected":"reject","reason":"未经核实的全称前提，且把强制设为既定结论。"},
+    {"id":"holdout-q08","category":"challenge","text":"假设展览里的照片都没有拍摄日期，你会找什么线索，把它们按先后排列？","expected":"accept","reason":"练习依据线索排序，不要求知道特定历史知识。"},
+    {"id":"holdout-q09","category":"challenge","text":"假设一次维修后电梯投诉变少了，还可能有哪些原因？","expected":"accept","reason":"假设清楚，可提出多种解释，不把先后顺序直接当因果。"},
+    {"id":"holdout-q10","category":"challenge","text":"假设一所学校想取消铃声，你会先了解什么？","expected":"discuss","reason":"容易进入，但对象和判断任务较宽，需人工评议是否过于空泛。"}
+  ],
+  "dialogues": [
+    {"id":"holdout-d01","question":"共享冰箱里的食物该怎样标注日期？","messages":[{"role":"user","content":"小字很容易看错。"}],"expectedActions":["explain","perspective","ask"],"criteria":"接住可读性这一点，不要求用户补齐方案，不机械赞美。"},
+    {"id":"holdout-d02","question":"自行车租赁点的车经常找不到，怎样先了解原因？","messages":[{"role":"user","content":"可能是车被停到了隔壁，也可能是地图没更新。我会对照现场位置和归还记录，再决定要不要加提醒。"}],"expectedActions":["end","perspective"],"criteria":"已有替代解释和核查方式，不再点评回答全面或要求重复分析。"},
+    {"id":"holdout-d03","question":"买了电影票却不想看了，做决定时要考虑什么？","messages":[{"role":"user","content":"沉没成本是什么意思？"}],"expectedActions":["explain"],"criteria":"直接解释概念并贴合情境，不用反问代替解释，不替用户决定。"},
+    {"id":"holdout-d04","question":"没有铃声时，怎样知道下一节课要开始了？","messages":[{"role":"assistant","content":"可以在教室显示下一节课的开始时间。"},{"role":"user","content":"明白了，谢谢。"}],"expectedActions":["end"],"criteria":"允许空正文或简短收尾；不继续追问，也不记作明确退出。"},
+    {"id":"holdout-d05","question":"展览照片没有日期时，可以找哪些线索？","messages":[{"role":"user","content":"别再回复我了。"}],"expectedActions":["stop"],"criteria":"明确退出优先，正文为空且不调用模型；单独报告此例是程序拦截。"}
+  ]
+}
